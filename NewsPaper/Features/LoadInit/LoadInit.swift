@@ -7,17 +7,17 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct LoadInit: View {
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("jak motero con swiftUI")
+            CustomText(content:"Hello World es una prueba")
         }.padding()
     }
 }
 
 #Preview {
-    ContentView()
+    LoadInit()
 }
