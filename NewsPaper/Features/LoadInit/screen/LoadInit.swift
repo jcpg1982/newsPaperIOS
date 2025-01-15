@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct LoadInit: View {
+    
+    @StateObject private var loadInitViewModel: LoadInitViewModel = LoadInitViewModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            CustomText(content:"Hello World es una prueba")
+        ZStack {
+            CircleAnimationView()
+            ImageLoadingView()
         }.padding()
     }
 }
