@@ -7,12 +7,18 @@
 
 import SwiftUI
 
-struct CircleAnimationView: View {
-    @State private var animate = false
-    var colorCircle: Color = .blue
-    var repeatAnimation: Bool = false
+public struct CircleAnimationView: View {
     
-    var body: some View {
+    @State private var animate = false
+    var colorCircle: Color
+    var repeatAnimation: Bool
+    
+    public init(colorCircle: Color = .blue, repeatAnimation: Bool = false) {
+        self.colorCircle = colorCircle
+        self.repeatAnimation = repeatAnimation
+    }
+    
+    public var body: some View {
         GeometryReader { geometry in
             ZStack {
                 Circle()

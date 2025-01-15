@@ -7,18 +7,30 @@
 
 import SwiftUI
 
-struct ImageLoadingView: View {
-    var primaryColor: Color = .red // Color del indicador de progreso
-    var photoUrl: String = ""       // URL de la imagen
-    var painterError: String = ""   // Nombre de la imagen de error en los assets
-    var contentMode: ContentMode = .fit // Escalado de contenido
+public struct ImageLoadingView: View {
+    var primaryColor: Color
+    var photoUrl: String
+    var painterError: String
+    var contentMode: ContentMode
     
     @State private var image: UIImage? = nil  // Imagen descargada
     @State private var rotation: Double = 0.0
     @State private var trimValue: CGFloat = 0.0
     @State private var isLoading: Bool = true
     
-    var body: some View {
+    public init(
+        primaryColor: Color = .red,
+        photoUrl: String = "" ,
+        painterError: String = "" ,
+        contentMode: ContentMode = .fit
+    ) {
+        self.primaryColor = primaryColor
+        self.photoUrl = photoUrl
+        self.painterError = painterError
+        self.contentMode = contentMode
+    }
+    
+    public var body: some View {
         ZStack {
             Circle()
                 .trim(from: 0.0, to: trimValue)
