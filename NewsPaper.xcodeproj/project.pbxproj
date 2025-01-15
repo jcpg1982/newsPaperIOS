@@ -47,16 +47,22 @@
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		897DEBBE2D36CB2100B3F864 /* NewsPaper */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = NewsPaper;
 			sourceTree = "<group>";
 		};
 		897DEBCF2D36CB2200B3F864 /* NewsPaperTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = NewsPaperTests;
 			sourceTree = "<group>";
 		};
 		897DEBD92D36CB2200B3F864 /* NewsPaperUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = NewsPaperUITests;
 			sourceTree = "<group>";
 		};
