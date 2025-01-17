@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import ModuleNetwork
 
 public struct InitResponse {
     let appConfig: AppConfig
@@ -14,10 +13,16 @@ public struct InitResponse {
     let pages: Pages
     let services: [Services]
     
-    public init(from networkResponse: InitResponseNetwork?) {
-        self.appConfig = networkResponse?.appConfig.map { AppConfig(from: $0) } ?? AppConfig()
-        self.appMenu = networkResponse?.appMenu?.map { AppMenu(from: $0) } ?? []
-        self.pages = networkResponse?.pages.map { Pages(from: $0) } ?? Pages()
-        self.services = networkResponse?.services?.map { Services(from: $0) } ?? []
+    public init(
+        appConfig: AppConfig = AppConfig(),
+        appMenu: [AppMenu] = [],
+        pages: Pages = Pages(),
+        services: [Services] = []
+    ) {
+        self.appConfig = appConfig
+        self.appMenu = appMenu
+        self.pages = pages
+        self.services = services
     }
+
 }

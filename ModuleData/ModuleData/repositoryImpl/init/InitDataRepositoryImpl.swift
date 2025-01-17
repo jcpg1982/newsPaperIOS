@@ -6,8 +6,8 @@
 //
 
 import Foundation
-import Model
 import ModuleNetwork
+import Model
 
 public class InitDataRepositoryImpl : InitDataRepository {
     
@@ -22,7 +22,7 @@ public class InitDataRepositoryImpl : InitDataRepository {
             let networkResponse = try await initNetworkRepository.getInit()
             switch networkResponse {
             case .success(let networkResponse):
-                let initResponse = InitResponse(from: networkResponse)
+                let initResponse = InitResponse.init(from: networkResponse)
                 return .success(initResponse)
                 
             case .failure(let error):

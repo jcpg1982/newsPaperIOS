@@ -25,30 +25,40 @@ class LoadInitViewModel: ObservableObject {
     
     func fetchInitData() {
         isLoading = true
-        Task {
+        Task {@MainActor in
+            updateState(isLoading: true, error: nil)
+            defer { updateState(isLoading: false) }
             do {
                 let response = try await initUseCase.execute()
                 self.initResponse = response
-                fetchAppVerssion()
+                fetchAppVersion()
             } catch {
-                self.isLoading = false
-                self.error = error
+                updateState(error: error)
+                print("Error fetching init data: \(error)")
+            }
+        }
+        
+        func fetchAppVersion() {
+            Task { @MainActor in
+                updateState(isLoading: true, error: nil)
+                defer { updateState(isLoading: false) }
+                do {
+                    let response = try await self.appVersionUseCase.execute()
+                    self.appVersionResponse = response
+                } catch {
+                    updateState(error: error)
+                    print("Error fetching app version: \(error)")
+                }
             }
         }
     }
     
-    func fetchAppVerssion() {
-        isLoading = true
-        Task {
-            do {
-                let response = try await appVersionUseCase.execute()
-                self.appVersionResponse = response
-                self.isLoading = false
-            } catch {
-                self.isLoading = false
-                self.error = error
-            }
+    private func updateState(isLoading: Bool? = nil, error: Error? = nil) {
+        if let isLoading = isLoading {
+            self.isLoading = isLoading
+        }
+        if let error = error {
+            self.error = error
         }
     }
-    
 }

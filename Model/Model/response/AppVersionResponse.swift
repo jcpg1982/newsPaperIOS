@@ -6,19 +6,23 @@
 //
 
 import Foundation
-import ModuleNetwork
 
 public struct AppVersionResponse {
     
-    let appForceUpdate: Bool?
-    let appPlatform: String?
-    let appVersion: String?
-    let createdAt: String?
+    let appForceUpdate: Bool
+    let appPlatform: String
+    let appVersion: String
+    let createdAt: String
     
-    public init(from appVersionResponseNetwork: AppVersionResponseNetwork?) {
-        self.appForceUpdate = appVersionResponseNetwork?.appForceUpdate  ?? false
-        self.appPlatform = appVersionResponseNetwork?.appPlatform ?? ""
-        self.appVersion = appVersionResponseNetwork?.appVersion ?? ""
-        self.createdAt = appVersionResponseNetwork?.createdAt ?? ""
+    public init(
+        appForceUpdate: Bool = false,
+        appPlatform: String = "",
+        appVersion: String = "",
+        createdAt: String = ""
+    ){
+        self.appForceUpdate = appForceUpdate
+        self.appPlatform = appPlatform
+        self.appVersion = appVersion
+        self.createdAt = createdAt
     }
 }
