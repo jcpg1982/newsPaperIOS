@@ -7,151 +7,155 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8968FFB92D3A9F2400D39416 /* Design.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8968FFB82D3A9F2400D39416 /* Design.framework */; };
-		8968FFBA2D3A9F2400D39416 /* Design.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8968FFB82D3A9F2400D39416 /* Design.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E32AEBE29D83F79B1D3AD206 /* Pods_SharedPods_NewsPaper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6F424B7790A5EE8D058EC72 /* Pods_SharedPods_NewsPaper.framework */; };
+		8E55C14E898D0908285D67A3 /* Pods_Design.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B585A26DDE709EF663117EFF /* Pods_Design.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		89814A272D3A165D00BFFF53 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				8968FFBA2D3A9F2400D39416 /* Design.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		1C9F547746C33DB2EF3FA493 /* Pods-SharedPods-NewsPaper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharedPods-NewsPaper.debug.xcconfig"; path = "Target Support Files/Pods-SharedPods-NewsPaper/Pods-SharedPods-NewsPaper.debug.xcconfig"; sourceTree = "<group>"; };
-		530DB6EC71181AF61C133F2C /* Pods-SharedPods-NewsPaper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharedPods-NewsPaper.release.xcconfig"; path = "Target Support Files/Pods-SharedPods-NewsPaper/Pods-SharedPods-NewsPaper.release.xcconfig"; sourceTree = "<group>"; };
-		8968FFB82D3A9F2400D39416 /* Design.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Design.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		89ED79A12D3A105E00A391CF /* NewsPaper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsPaper.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A6F424B7790A5EE8D058EC72 /* Pods_SharedPods_NewsPaper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SharedPods_NewsPaper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8968FF172D3A9E4100D39416 /* Design.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Design.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B585A26DDE709EF663117EFF /* Pods_Design.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Design.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C92522A19C1F0A5D2A39588B /* Pods-Design.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Design.release.xcconfig"; path = "Target Support Files/Pods-Design/Pods-Design.release.xcconfig"; sourceTree = "<group>"; };
+		EF899BB2E1794217C6C15859 /* Pods-Design.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Design.debug.xcconfig"; path = "Target Support Files/Pods-Design/Pods-Design.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		8968FF1E2D3A9E4100D39416 /* Exceptions for "Design" folder in "Design" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			publicHeaders = (
+				Design.h,
+			);
+			target = 8968FF162D3A9E4100D39416 /* Design */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		89ED79A32D3A105E00A391CF /* NewsPaper */ = {
+		8968FF192D3A9E4100D39416 /* Design */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = NewsPaper;
+			exceptions = (
+				8968FF1E2D3A9E4100D39416 /* Exceptions for "Design" folder in "Design" target */,
+			);
+			path = Design;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		89ED799E2D3A105E00A391CF /* Frameworks */ = {
+		8968FF142D3A9E4100D39416 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8968FFB92D3A9F2400D39416 /* Design.framework in Frameworks */,
-				E32AEBE29D83F79B1D3AD206 /* Pods_SharedPods_NewsPaper.framework in Frameworks */,
+				8E55C14E898D0908285D67A3 /* Pods_Design.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		89814A232D3A165D00BFFF53 /* Frameworks */ = {
+		8968FF0D2D3A9E4100D39416 = {
 			isa = PBXGroup;
 			children = (
-				8968FFB82D3A9F2400D39416 /* Design.framework */,
-				A6F424B7790A5EE8D058EC72 /* Pods_SharedPods_NewsPaper.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		89ED79982D3A105E00A391CF = {
-			isa = PBXGroup;
-			children = (
-				89ED79A32D3A105E00A391CF /* NewsPaper */,
-				89814A232D3A165D00BFFF53 /* Frameworks */,
-				89ED79A22D3A105E00A391CF /* Products */,
-				F48D3E93FB1CE41CEE5A9C1C /* Pods */,
+				8968FF192D3A9E4100D39416 /* Design */,
+				8968FF182D3A9E4100D39416 /* Products */,
+				F2D3A84B0E8508B41F032658 /* Pods */,
+				B6CAA1E923543BE2555055A0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		89ED79A22D3A105E00A391CF /* Products */ = {
+		8968FF182D3A9E4100D39416 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				89ED79A12D3A105E00A391CF /* NewsPaper.app */,
+				8968FF172D3A9E4100D39416 /* Design.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F48D3E93FB1CE41CEE5A9C1C /* Pods */ = {
+		B6CAA1E923543BE2555055A0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1C9F547746C33DB2EF3FA493 /* Pods-SharedPods-NewsPaper.debug.xcconfig */,
-				530DB6EC71181AF61C133F2C /* Pods-SharedPods-NewsPaper.release.xcconfig */,
+				B585A26DDE709EF663117EFF /* Pods_Design.framework */,
 			);
-			path = Pods;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F2D3A84B0E8508B41F032658 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF899BB2E1794217C6C15859 /* Pods-Design.debug.xcconfig */,
+				C92522A19C1F0A5D2A39588B /* Pods-Design.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		8968FF122D3A9E4100D39416 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		89ED79A02D3A105E00A391CF /* NewsPaper */ = {
+		8968FF162D3A9E4100D39416 /* Design */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 89ED79AF2D3A105F00A391CF /* Build configuration list for PBXNativeTarget "NewsPaper" */;
+			buildConfigurationList = 8968FF1F2D3A9E4100D39416 /* Build configuration list for PBXNativeTarget "Design" */;
 			buildPhases = (
-				04EEEC14FF0CB958912642F1 /* [CP] Check Pods Manifest.lock */,
-				89ED799D2D3A105E00A391CF /* Sources */,
-				89ED799E2D3A105E00A391CF /* Frameworks */,
-				89ED799F2D3A105E00A391CF /* Resources */,
-				89814A272D3A165D00BFFF53 /* Embed Frameworks */,
+				3792ED1CB1C07D700B89E706 /* [CP] Check Pods Manifest.lock */,
+				8968FF122D3A9E4100D39416 /* Headers */,
+				8968FF132D3A9E4100D39416 /* Sources */,
+				8968FF142D3A9E4100D39416 /* Frameworks */,
+				8968FF152D3A9E4100D39416 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				89ED79A32D3A105E00A391CF /* NewsPaper */,
+				8968FF192D3A9E4100D39416 /* Design */,
 			);
-			name = NewsPaper;
-			productName = NewsPaper;
-			productReference = 89ED79A12D3A105E00A391CF /* NewsPaper.app */;
-			productType = "com.apple.product-type.application";
+			name = Design;
+			productName = Design;
+			productReference = 8968FF172D3A9E4100D39416 /* Design.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		89ED79992D3A105E00A391CF /* Project object */ = {
+		8968FF0E2D3A9E4100D39416 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
-					89ED79A02D3A105E00A391CF = {
+					8968FF162D3A9E4100D39416 = {
 						CreatedOnToolsVersion = 16.2;
 					};
 				};
 			};
-			buildConfigurationList = 89ED799C2D3A105E00A391CF /* Build configuration list for PBXProject "NewsPaper" */;
+			buildConfigurationList = 8968FF112D3A9E4100D39416 /* Build configuration list for PBXProject "Design" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 89ED79982D3A105E00A391CF;
+			mainGroup = 8968FF0D2D3A9E4100D39416;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 89ED79A22D3A105E00A391CF /* Products */;
+			productRefGroup = 8968FF182D3A9E4100D39416 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				89ED79A02D3A105E00A391CF /* NewsPaper */,
+				8968FF162D3A9E4100D39416 /* Design */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		89ED799F2D3A105E00A391CF /* Resources */ = {
+		8968FF152D3A9E4100D39416 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -161,7 +165,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		04EEEC14FF0CB958912642F1 /* [CP] Check Pods Manifest.lock */ = {
+		3792ED1CB1C07D700B89E706 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -176,7 +180,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SharedPods-NewsPaper-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Design-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -186,7 +190,7 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		89ED799D2D3A105E00A391CF /* Sources */ = {
+		8968FF132D3A9E4100D39416 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -196,7 +200,73 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		89ED79AD2D3A105F00A391CF /* Debug */ = {
+		8968FF202D3A9E4100D39416 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF899BB2E1794217C6C15859 /* Pods-Design.debug.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = pe.com.rpalatam.Design;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8968FF212D3A9E4100D39416 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C92522A19C1F0A5D2A39588B /* Pods-Design.release.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = pe.com.rpalatam.Design;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8968FF222D3A9E4100D39416 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -230,6 +300,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -256,10 +327,12 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		89ED79AE2D3A105F00A391CF /* Release */ = {
+		8968FF232D3A9E4100D39416 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -293,6 +366,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -312,89 +386,33 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		89ED79B02D3A105F00A391CF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1C9F547746C33DB2EF3FA493 /* Pods-SharedPods-NewsPaper.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"NewsPaper/Preview Content\"";
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = pe.com.rpalatam.NewsPaper;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		89ED79B12D3A105F00A391CF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 530DB6EC71181AF61C133F2C /* Pods-SharedPods-NewsPaper.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"NewsPaper/Preview Content\"";
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = pe.com.rpalatam.NewsPaper;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		89ED799C2D3A105E00A391CF /* Build configuration list for PBXProject "NewsPaper" */ = {
+		8968FF112D3A9E4100D39416 /* Build configuration list for PBXProject "Design" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				89ED79AD2D3A105F00A391CF /* Debug */,
-				89ED79AE2D3A105F00A391CF /* Release */,
+				8968FF222D3A9E4100D39416 /* Debug */,
+				8968FF232D3A9E4100D39416 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		89ED79AF2D3A105F00A391CF /* Build configuration list for PBXNativeTarget "NewsPaper" */ = {
+		8968FF1F2D3A9E4100D39416 /* Build configuration list for PBXNativeTarget "Design" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				89ED79B02D3A105F00A391CF /* Debug */,
-				89ED79B12D3A105F00A391CF /* Release */,
+				8968FF202D3A9E4100D39416 /* Debug */,
+				8968FF212D3A9E4100D39416 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 89ED79992D3A105E00A391CF /* Project object */;
+	rootObject = 8968FF0E2D3A9E4100D39416 /* Project object */;
 }
