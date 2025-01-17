@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		8968FFB92D3A9F2400D39416 /* Design.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8968FFB82D3A9F2400D39416 /* Design.framework */; };
 		8968FFBA2D3A9F2400D39416 /* Design.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8968FFB82D3A9F2400D39416 /* Design.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8968FFD72D3A9FFE00D39416 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8968FFD62D3A9FFE00D39416 /* Domain.framework */; };
+		8968FFD82D3A9FFE00D39416 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8968FFD62D3A9FFE00D39416 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E32AEBE29D83F79B1D3AD206 /* Pods_SharedPods_NewsPaper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6F424B7790A5EE8D058EC72 /* Pods_SharedPods_NewsPaper.framework */; };
 /* End PBXBuildFile section */
 
@@ -19,6 +21,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				8968FFD82D3A9FFE00D39416 /* Domain.framework in Embed Frameworks */,
 				8968FFBA2D3A9F2400D39416 /* Design.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -30,6 +33,7 @@
 		1C9F547746C33DB2EF3FA493 /* Pods-SharedPods-NewsPaper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharedPods-NewsPaper.debug.xcconfig"; path = "Target Support Files/Pods-SharedPods-NewsPaper/Pods-SharedPods-NewsPaper.debug.xcconfig"; sourceTree = "<group>"; };
 		530DB6EC71181AF61C133F2C /* Pods-SharedPods-NewsPaper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharedPods-NewsPaper.release.xcconfig"; path = "Target Support Files/Pods-SharedPods-NewsPaper/Pods-SharedPods-NewsPaper.release.xcconfig"; sourceTree = "<group>"; };
 		8968FFB82D3A9F2400D39416 /* Design.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Design.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8968FFD62D3A9FFE00D39416 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89ED79A12D3A105E00A391CF /* NewsPaper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsPaper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6F424B7790A5EE8D058EC72 /* Pods_SharedPods_NewsPaper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SharedPods_NewsPaper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -47,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8968FFD72D3A9FFE00D39416 /* Domain.framework in Frameworks */,
 				8968FFB92D3A9F2400D39416 /* Design.framework in Frameworks */,
 				E32AEBE29D83F79B1D3AD206 /* Pods_SharedPods_NewsPaper.framework in Frameworks */,
 			);
@@ -58,6 +63,7 @@
 		89814A232D3A165D00BFFF53 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8968FFD62D3A9FFE00D39416 /* Domain.framework */,
 				8968FFB82D3A9F2400D39416 /* Design.framework */,
 				A6F424B7790A5EE8D058EC72 /* Pods_SharedPods_NewsPaper.framework */,
 			);
