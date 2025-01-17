@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Model
 
 public class InitDataRepository {
     

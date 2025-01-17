@@ -7,6 +7,7 @@
 
 import Foundation
 import Model
+import ModuleData
 
 public class InitUseCase {
     
