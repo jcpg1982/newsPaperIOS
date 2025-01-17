@@ -1,19 +1,20 @@
 //
-//  NetworkClient.swift
-//  Network
+//  SesionNetyWork.swift
+//  ModuleNetwork
 //
-//  Created by Juan Pasache on 15/01/25.
+//  Created by Juan Pasache on 17/01/25.
 //
 
 import Foundation
 
-public class NetworkClient {
+class NetworkClient : NetworkClientProtocol{
     
     public static let shared = NetworkClient()
     
     private init(){}
     
-    func performRequest<T: Decodable>(endpoint: String) async throws -> T {
+    func performRequest<T>(endpoint: String) async throws -> T where T : Decodable {
+        
         let fullUrl = Constants.baseUrl + endpoint
         print("performRequest URL: \(fullUrl)")
         
@@ -51,4 +52,6 @@ public class NetworkClient {
             throw URLError(.unknown)
         }
     }
+    
+    
 }

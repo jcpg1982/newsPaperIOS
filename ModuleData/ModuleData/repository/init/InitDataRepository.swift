@@ -11,7 +11,7 @@ import ModuleNetwork
 
 public class InitDataRepository {
     
-    let initNetworkRepository = InitNetworkRepository.shared
+    let initNetworkRepository = InitNetworkRepositoryImpl.shared
     
     public static let shared = InitDataRepository()
     
