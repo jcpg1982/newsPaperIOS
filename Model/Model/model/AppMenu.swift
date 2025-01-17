@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import ModuleNetwork
 
 public struct AppMenu {
     let icon: String
@@ -23,11 +22,17 @@ public struct AppMenu {
         self.name = ""
     }
     
-    public init(from appMenuNetwork: AppMenuNetwork?) {
-        self.icon = appMenuNetwork?.icon ?? ""
-        self.isActive = appMenuNetwork?.isActive ?? false
-        self.itemMenuList = appMenuNetwork?.itemMenuList?.map { ItemMenu(from: $0) } ?? []
-        self.menuId = appMenuNetwork?.menuId ?? ""
-        self.name = appMenuNetwork?.name ?? ""
+    public init(
+        icon: String = "",
+        isActive: Bool = false,
+        itemMenuList: [ItemMenu] = [],
+        menuId: String = "",
+        name: String = ""
+    ) {
+        self.icon = icon
+        self.isActive = isActive
+        self.itemMenuList = itemMenuList
+        self.menuId = menuId
+        self.name = menuId
     }
 }

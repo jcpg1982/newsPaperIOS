@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import ModuleNetwork
 
 public struct Styles {
     let css: String
@@ -15,7 +14,9 @@ public struct Styles {
         self.css = ""
     }
     
-    public init(from stylesNetwork: StylesNetwork?) {
-        self.css = stylesNetwork?.css ?? ""
+    public init(
+        css: String = ""
+    ) {
+        self.css = css
     }
 }

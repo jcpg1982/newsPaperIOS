@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import ModuleNetwork
 
 public struct Home {
     let components: [ComponentInitHome]
@@ -15,7 +14,9 @@ public struct Home {
         self.components = []
     }
     
-    public init(from homeNetwork: HomeNetwork?) {
-        self.components = homeNetwork?.components?.map { ComponentInitHome(from: $0) } ?? []
+    public init(
+        components: [ComponentInitHome] = []
+    ) {
+        self.components = components
     }
 }

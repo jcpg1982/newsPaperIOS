@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import ModuleNetwork
 
 public struct Fonts{
     let body: Body
@@ -21,10 +20,15 @@ public struct Fonts{
         self.title = Title()
     }
     
-    public init(from fontsNetwork: FontsNetwork?) {
-        self.body = fontsNetwork?.body.map { Body(from: $0) } ?? Body()
-        self.default = fontsNetwork?.`default`.map { Default(from: $0) } ?? Default()
-        self.heading = fontsNetwork?.heading.map { Heading(from: $0) } ?? Heading()
-        self.title = fontsNetwork?.title.map { Title(from: $0) } ?? Title()
+    public init(
+        body: Body = Body(),
+        `default`: Default = Default(),
+        heading: Heading = Heading(),
+        title: Title = Title()
+    ) {
+        self.body = body
+        self.default = `default`
+        self.heading = heading
+        self.title = title
     }
 }

@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import ModuleNetwork
 
 public struct LegalDocuments : Decodable {
     let identifier: String
@@ -17,8 +16,11 @@ public struct LegalDocuments : Decodable {
         self.isActive = false
     }
     
-    public init(from legalDocumentsNetwork: LegalDocumentsNetwork?) {
-        self.identifier = legalDocumentsNetwork?.identifier ?? ""
-        self.isActive = legalDocumentsNetwork?.isActive ?? false
+    public init(
+        identifier: String = "",
+        isActive: Bool = false
+    ) {
+        self.identifier = identifier
+        self.isActive = isActive
     }
 }

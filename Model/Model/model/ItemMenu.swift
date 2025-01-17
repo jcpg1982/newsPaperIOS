@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import ModuleNetwork
 
 public struct ItemMenu {
     let itemName: String
@@ -19,9 +18,13 @@ public struct ItemMenu {
         self.type = ""
     }
     
-    public init(from itemMenuNetwork: ItemMenuNetwork?) {
-        self.itemName = itemMenuNetwork?.itemName ?? ""
-        self.itemUrl = itemMenuNetwork?.itemUrl ?? ""
-        self.type = itemMenuNetwork?.type ?? ""
+    public init(
+        itemName: String = "",
+        itemUrl: String = "",
+        type: String = ""
+    ) {
+        self.itemName = itemName
+        self.itemUrl = itemUrl
+        self.type = type
     }
 }

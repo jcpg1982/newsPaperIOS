@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import ModuleNetwork
 
 public struct SettingService {
     let isShare: Bool
@@ -19,9 +18,13 @@ public struct SettingService {
         self.maxDownloadsPerUser = 0
     }
     
-    public init(from settingServiceNetwork: SettingServiceNetwork?) {
-        self.isShare = settingServiceNetwork?.isShare ?? false
-        self.isDownload = settingServiceNetwork?.isDownload ?? false
-        self.maxDownloadsPerUser = settingServiceNetwork?.maxDownloadsPerUser ?? 0
+    public init(
+        isShare: Bool = false,
+        isDownload: Bool = false,
+        maxDownloadsPerUser: Int = 0
+    ) {
+        self.isShare = isShare
+        self.isDownload = isDownload
+        self.maxDownloadsPerUser = maxDownloadsPerUser
     }
 }

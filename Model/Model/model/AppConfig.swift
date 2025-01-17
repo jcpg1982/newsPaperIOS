@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import ModuleNetwork
 
 public struct AppConfig {
     let showSalaPlus: Bool
@@ -31,15 +30,25 @@ public struct AppConfig {
         self.legalDocuments = []
     }
     
-    public init(from appConfigNetwork: AppConfigNetwork?) {
-        self.showSalaPlus = appConfigNetwork?.showSalaPlus ?? false
-        self.showSubcription = appConfigNetwork?.showSubcription ?? false
-        self.showMenuPodcast = appConfigNetwork?.showMenuPodcast ?? false
-        self.hasSubscription = appConfigNetwork?.hasSubscription ?? false
-        self.showMenuEpaper = appConfigNetwork?.showMenuEpaper ?? false
-        self.urlSuscription = appConfigNetwork?.urlSuscription ?? ""
-        self.premiumIdentifier = appConfigNetwork?.premiumIdentifier ?? ""
-        self.themeModes = appConfigNetwork?.themeModes?.map { ThemeMode(from: $0) } ?? []
-        self.legalDocuments = appConfigNetwork?.legalDocuments?.map { LegalDocuments(from: $0) } ?? []
+    public init(
+        showSalaPlus : Bool = false,
+        showSubcription : Bool = false,
+        showMenuPodcast : Bool = false,
+        hasSubscription : Bool = false,
+        showMenuEpaper : Bool = false,
+        urlSuscription : String = "",
+        premiumIdentifier: String = "",
+        themeModes : [ThemeMode] = [],
+        legalDocuments : [LegalDocuments] = []
+    ) {
+        self.showSalaPlus = showSalaPlus
+        self.showSubcription = showSubcription
+        self.showMenuPodcast = showMenuPodcast
+        self.hasSubscription = hasSubscription
+        self.showMenuEpaper = showMenuEpaper
+        self.urlSuscription = urlSuscription
+        self.premiumIdentifier = premiumIdentifier
+        self.themeModes = themeModes
+        self.legalDocuments = legalDocuments
     }
 }

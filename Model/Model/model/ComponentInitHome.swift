@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import ModuleNetwork
 
 public struct ComponentInitHome {
     let componentType: String
@@ -19,9 +18,13 @@ public struct ComponentInitHome {
         self.componentDesign = ""
     }
     
-    public init(from componentNetwork: ComponentInitHomeNetwork?) {
-        self.componentType = componentNetwork?.componentType ?? ""
-        self.identifier = componentNetwork?.identifier ?? ""
-        self.componentDesign = componentNetwork?.componentDesign ?? ""
+    public init(
+        componentType: String = "",
+        identifier: String = "",
+        componentDesign: String = ""
+    ) {
+        self.componentType = componentType
+        self.identifier = identifier
+        self.componentDesign = componentDesign
     }
 }

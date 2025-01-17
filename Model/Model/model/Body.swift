@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import ModuleNetwork
 
 public struct Body{
     let family: String
@@ -17,8 +16,11 @@ public struct Body{
         self.weight = ""
     }
     
-    public init(from bodyNetwork: BodyNetwork?) {
-        self.family = bodyNetwork?.family ?? ""
-        self.weight = bodyNetwork?.weight ?? ""
+    public init(
+        family: String = "",
+        weight: String = ""
+    ) {
+        self.family = family
+        self.weight = weight
     }
 }

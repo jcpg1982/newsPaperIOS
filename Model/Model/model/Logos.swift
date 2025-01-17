@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import ModuleNetwork
 
 public struct Logos {
     let logo: String
@@ -21,10 +20,15 @@ public struct Logos {
         self.logoLoaderBg = ""
     }
     
-    public init(from logosNetwork: LogosNetwork?) {
-        self.logo = logosNetwork?.logo ?? ""
-        self.logoMenu = logosNetwork?.logoMenu ?? ""
-        self.logoLoader = logosNetwork?.logoLoader ?? ""
-        self.logoLoaderBg = logosNetwork?.logoLoaderBg ?? ""
+    public init(
+        logo: String = "",
+        logoMenu: String = "",
+        logoLoader: String = "",
+        logoLoaderBg: String = ""
+    ) {
+        self.logo = logo
+        self.logoMenu = logoMenu
+        self.logoLoader = logoLoader
+        self.logoLoaderBg = logoLoaderBg
     }
 }

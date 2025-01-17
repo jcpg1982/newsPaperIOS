@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import ModuleNetwork
 
 public struct Services {
     let service: String
@@ -21,10 +20,15 @@ public struct Services {
         self.settingService = SettingService()
     }
     
-    public init(from servicesNetwork: ServicesNetwork?) {
-        self.service = servicesNetwork?.service ?? ""
-        self.provider = servicesNetwork?.provider ?? ""
-        self.isActive = servicesNetwork?.isActive ?? false
-        self.settingService = servicesNetwork?.settingService.map { SettingService(from: $0) } ?? SettingService()
+    public init(
+        service: String = "",
+        provider: String = "",
+        isActive: Bool = false,
+        settingService: SettingService = SettingService()
+    ) {
+        self.service = service
+        self.provider = provider
+        self.isActive = isActive
+        self.settingService = settingService
     }
 }

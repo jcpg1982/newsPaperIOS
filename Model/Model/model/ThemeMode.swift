@@ -6,9 +6,8 @@
 //
 
 import Foundation
-import ModuleNetwork
 
-public struct ThemeMode{
+public struct ThemeMode {
     let colors: Colors
     let fonts: Fonts
     let logos: Logos
@@ -23,11 +22,17 @@ public struct ThemeMode{
         self.styles = Styles()
     }
     
-    public init(from themeModeNetwork: ThemeModeNetwork?) {
-        self.colors = themeModeNetwork?.colors.map { Colors(from: $0) } ?? Colors()
-        self.fonts = themeModeNetwork?.fonts.map { Fonts(from: $0) } ?? Fonts()
-        self.logos = themeModeNetwork?.logos.map { Logos(from: $0) } ?? Logos()
-        self.mode = themeModeNetwork?.mode ?? ""
-        self.styles = themeModeNetwork?.styles.map { Styles(from: $0) } ?? Styles()
+    public init(
+        colors: Colors = Colors(),
+        fonts: Fonts = Fonts(),
+        logos: Logos = Logos(),
+        mode: String = "",
+        styles: Styles = Styles()
+    ) {
+        self.colors = colors
+        self.fonts = fonts
+        self.logos = logos
+        self.mode = ""
+        self.styles = styles
     }
 }

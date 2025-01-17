@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import ModuleNetwork
 
 public struct Pages {
     let home: Home
@@ -15,7 +14,9 @@ public struct Pages {
         self.home = Home()
     }
     
-    public init(from pagesNetwork: PagesNetwork?) {
-        self.home = pagesNetwork?.home.map { Home(from: $0) } ?? Home()
+    public init(
+        home: Home = Home()
+    ) {
+        self.home = home
     }
 }

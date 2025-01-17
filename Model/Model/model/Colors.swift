@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import ModuleNetwork
 
 public struct Colors:Decodable{
     let bgColorApp: String
@@ -23,11 +22,17 @@ public struct Colors:Decodable{
         self.text = ""
     }
     
-    public init(from colorsNetwork: ColorsNetwork?) {
-        self.bgColorApp = colorsNetwork?.bgColorApp ?? ""
-        self.bgColorHeader = colorsNetwork?.bgColorHeader ?? ""
-        self.primaryColor = colorsNetwork?.primaryColor ?? ""
-        self.colorAuthorOpinion = colorsNetwork?.colorAuthorOpinion ?? ""
-        self.text = colorsNetwork?.text ?? ""
+    public init(
+        bgColorApp: String = "",
+        bgColorHeader: String = "",
+        primaryColor: String = "",
+        colorAuthorOpinion: String = "",
+        text: String = ""
+    ) {
+        self.bgColorApp = bgColorApp
+        self.bgColorHeader = bgColorHeader
+        self.primaryColor = primaryColor
+        self.colorAuthorOpinion = colorAuthorOpinion
+        self.text = text
     }
 }
