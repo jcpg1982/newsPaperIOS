@@ -9,12 +9,13 @@ import Foundation
 import Model
 import Domain
 
-class LoadInitViewModel: ObservableObject {
+@Observable
+final class LoadInitViewModel: ObservableObject {
     
-    @Published var initResponse: InitResponse?
-    @Published var appVersionResponse: AppVersionResponse?
-    @Published var isLoading: Bool = false
-    @Published var error: Error?
+    var initResponse: InitResponse?
+    var appVersionResponse: AppVersionResponse?
+    var isLoading: Bool = false
+    var error: Error?
     
     private let initUseCase = InitUseCase.shared
     private let appVersionUseCase = AppVersionUseCase.shared
@@ -37,18 +38,18 @@ class LoadInitViewModel: ObservableObject {
                 print("Error fetching init data: \(error)")
             }
         }
-        
-        func fetchAppVersion() {
-            Task { @MainActor in
-                updateState(isLoading: true, error: nil)
-                defer { updateState(isLoading: false) }
-                do {
-                    let response = try await self.appVersionUseCase.execute()
-                    self.appVersionResponse = response
-                } catch {
-                    updateState(error: error)
-                    print("Error fetching app version: \(error)")
-                }
+    }
+    
+    func fetchAppVersion() {
+        Task { @MainActor in
+            updateState(isLoading: true, error: nil)
+            defer { updateState(isLoading: false) }
+            do {
+                let response = try await self.appVersionUseCase.execute()
+                self.appVersionResponse = response
+            } catch {
+                updateState(error: error)
+                print("Error fetching app version: \(error)")
             }
         }
     }
