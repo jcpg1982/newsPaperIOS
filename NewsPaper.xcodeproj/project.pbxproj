@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C89DBEDE37A46470924F4310 /* Pods_SharedPods_NewsPaper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD5CEE46F121DE4F656CCD /* Pods_SharedPods_NewsPaper.framework */; };
+		E32AEBE29D83F79B1D3AD206 /* Pods_SharedPods_NewsPaper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6F424B7790A5EE8D058EC72 /* Pods_SharedPods_NewsPaper.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,10 +24,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		28FD5CEE46F121DE4F656CCD /* Pods_SharedPods_NewsPaper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SharedPods_NewsPaper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C9F547746C33DB2EF3FA493 /* Pods-SharedPods-NewsPaper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharedPods-NewsPaper.debug.xcconfig"; path = "Target Support Files/Pods-SharedPods-NewsPaper/Pods-SharedPods-NewsPaper.debug.xcconfig"; sourceTree = "<group>"; };
+		530DB6EC71181AF61C133F2C /* Pods-SharedPods-NewsPaper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharedPods-NewsPaper.release.xcconfig"; path = "Target Support Files/Pods-SharedPods-NewsPaper/Pods-SharedPods-NewsPaper.release.xcconfig"; sourceTree = "<group>"; };
 		89ED79A12D3A105E00A391CF /* NewsPaper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsPaper.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8C5B5DA534ABFE74F5F956F3 /* Pods-SharedPods-NewsPaper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharedPods-NewsPaper.release.xcconfig"; path = "Target Support Files/Pods-SharedPods-NewsPaper/Pods-SharedPods-NewsPaper.release.xcconfig"; sourceTree = "<group>"; };
-		BF4F029ACF30CE50C952B288 /* Pods-SharedPods-NewsPaper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharedPods-NewsPaper.debug.xcconfig"; path = "Target Support Files/Pods-SharedPods-NewsPaper/Pods-SharedPods-NewsPaper.debug.xcconfig"; sourceTree = "<group>"; };
+		A6F424B7790A5EE8D058EC72 /* Pods_SharedPods_NewsPaper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SharedPods_NewsPaper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -43,7 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C89DBEDE37A46470924F4310 /* Pods_SharedPods_NewsPaper.framework in Frameworks */,
+				E32AEBE29D83F79B1D3AD206 /* Pods_SharedPods_NewsPaper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +53,7 @@
 		89814A232D3A165D00BFFF53 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				28FD5CEE46F121DE4F656CCD /* Pods_SharedPods_NewsPaper.framework */,
+				A6F424B7790A5EE8D058EC72 /* Pods_SharedPods_NewsPaper.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -64,7 +64,7 @@
 				89ED79A32D3A105E00A391CF /* NewsPaper */,
 				89814A232D3A165D00BFFF53 /* Frameworks */,
 				89ED79A22D3A105E00A391CF /* Products */,
-				D2921F0C5CB9F523C0BD74FD /* Pods */,
+				F48D3E93FB1CE41CEE5A9C1C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,11 +76,11 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D2921F0C5CB9F523C0BD74FD /* Pods */ = {
+		F48D3E93FB1CE41CEE5A9C1C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BF4F029ACF30CE50C952B288 /* Pods-SharedPods-NewsPaper.debug.xcconfig */,
-				8C5B5DA534ABFE74F5F956F3 /* Pods-SharedPods-NewsPaper.release.xcconfig */,
+				1C9F547746C33DB2EF3FA493 /* Pods-SharedPods-NewsPaper.debug.xcconfig */,
+				530DB6EC71181AF61C133F2C /* Pods-SharedPods-NewsPaper.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -311,7 +311,7 @@
 		};
 		89ED79B02D3A105F00A391CF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF4F029ACF30CE50C952B288 /* Pods-SharedPods-NewsPaper.debug.xcconfig */;
+			baseConfigurationReference = 1C9F547746C33DB2EF3FA493 /* Pods-SharedPods-NewsPaper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -340,7 +340,7 @@
 		};
 		89ED79B12D3A105F00A391CF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8C5B5DA534ABFE74F5F956F3 /* Pods-SharedPods-NewsPaper.release.xcconfig */;
+			baseConfigurationReference = 530DB6EC71181AF61C133F2C /* Pods-SharedPods-NewsPaper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
