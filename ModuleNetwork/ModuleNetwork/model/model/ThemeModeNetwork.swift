@@ -13,4 +13,12 @@ public struct ThemeModeNetwork : Decodable{
     public let logos: LogosNetwork?
     public let mode: String?
     public let styles: StylesNetwork?
+    
+    enum CodingKeys: String, CodingKey {
+        case colors = "colors"
+        case fonts = "fonts"
+        case logos = "logos"
+        case mode = "mode"
+        case styles = "styles"
+    }
 }

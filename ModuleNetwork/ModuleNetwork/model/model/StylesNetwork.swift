@@ -9,4 +9,8 @@ import Foundation
 
 public struct StylesNetwork : Decodable {
     public let css: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case css = "css"
+    }
 }

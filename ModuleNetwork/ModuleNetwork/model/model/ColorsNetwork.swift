@@ -13,4 +13,12 @@ public struct ColorsNetwork:Decodable{
     public let primaryColor: String?
     public let colorAuthorOpinion: String?
     public let text: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case bgColorApp = "bgcolor-app"
+        case bgColorHeader = "bgcolor-header"
+        case primaryColor = "primary-color"
+        case colorAuthorOpinion = "color-author-opinion"
+        case text = "text"
+    }
 }

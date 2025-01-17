@@ -9,4 +9,8 @@ import Foundation
 
 public struct HomeNetwork : Decodable {
     public let components: [ComponentInitHomeNetwork]?
+    
+    enum CodingKeys: String, CodingKey {
+        case components = "components"
+    }
 }

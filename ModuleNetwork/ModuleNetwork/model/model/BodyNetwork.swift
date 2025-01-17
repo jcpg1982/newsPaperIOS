@@ -10,4 +10,9 @@ import Foundation
 public struct BodyNetwork : Decodable{
     public let family: String?
     public let weight: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case family = "family"
+        case weight = "weight"
+    }
 }

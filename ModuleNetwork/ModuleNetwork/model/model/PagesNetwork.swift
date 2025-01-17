@@ -9,4 +9,8 @@ import Foundation
 
 public struct PagesNetwork :Decodable {
     public let home: HomeNetwork?
+    
+    enum CodingKeys: String, CodingKey {
+        case home = "home"
+    }
 }

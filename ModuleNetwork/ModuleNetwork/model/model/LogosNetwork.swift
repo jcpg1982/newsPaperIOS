@@ -12,4 +12,11 @@ public struct LogosNetwork : Decodable {
     public let logoMenu: String?
     public let logoLoader: String?
     public let logoLoaderBg: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case logo = "logo"
+        case logoMenu = "logo_menu"
+        case logoLoader = "logo_loader"
+        case logoLoaderBg = "logo_loaderbg"
+    }
 }

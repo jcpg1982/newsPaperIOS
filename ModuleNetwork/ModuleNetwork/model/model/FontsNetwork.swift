@@ -12,4 +12,11 @@ public struct FontsNetwork : Decodable{
     public let `default`: DefaultNetwork?
     public let heading: HeadingNetwork?
     public let title: TitleNetwork?
+    
+    enum CodingKeys: String, CodingKey {
+        case body = "body"
+        case `default` = "default"
+        case heading = "heading"
+        case title = "title"
+    }
 }
