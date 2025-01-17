@@ -24,4 +24,13 @@ public class InitNetworkRepositoryImpl : InitNetworkRepository {
         }
     }
     
+    public func appVersion() async throws -> Result<AppVersionResponseNetwork, any Error> {
+        do{
+            let response : AppVersionResponseNetwork = try await networkClient.performRequest(endpoint: Constants.Api.LAST_VERSION)
+            return .success(response)
+        }catch{
+            return  .failure(error)
+        }
+    }
+    
 }

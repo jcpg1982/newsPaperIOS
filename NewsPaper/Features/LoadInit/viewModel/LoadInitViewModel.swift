@@ -12,13 +12,14 @@ import Domain
 class LoadInitViewModel: ObservableObject {
     
     @Published var initResponse: InitResponse?
+    @Published var appVersionResponse: AppVersionResponse?
     @Published var isLoading: Bool = false
     @Published var error: Error?
     
-    private let initUseCase: InitUseCase
+    private let initUseCase = InitUseCase.shared
+    private let appVersionUseCase = AppVersionUseCase.shared
     
-    init(initUseCase: InitUseCase = InitUseCase.shared) {
-        self.initUseCase = initUseCase
+    init() {
         fetchInitData()
     }
     
@@ -28,6 +29,20 @@ class LoadInitViewModel: ObservableObject {
             do {
                 let response = try await initUseCase.execute()
                 self.initResponse = response
+                fetchAppVerssion()
+            } catch {
+                self.isLoading = false
+                self.error = error
+            }
+        }
+    }
+    
+    func fetchAppVerssion() {
+        isLoading = true
+        Task {
+            do {
+                let response = try await appVersionUseCase.execute()
+                self.appVersionResponse = response
                 self.isLoading = false
             } catch {
                 self.isLoading = false
