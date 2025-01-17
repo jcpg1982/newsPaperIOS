@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import ModuleNetwork
 
 public struct ThemeMode{
     let colors: Colors

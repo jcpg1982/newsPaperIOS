@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import ModuleNetwork
 
 public struct Pages {
     let home: Home

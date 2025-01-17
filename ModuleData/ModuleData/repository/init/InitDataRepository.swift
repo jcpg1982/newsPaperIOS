@@ -7,6 +7,7 @@
 
 import Foundation
 import Model
+import ModuleNetwork
 
 public class InitDataRepository {
     

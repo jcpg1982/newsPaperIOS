@@ -7,14 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8968023E2D3AA21700D39416 /* ModuleNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8968023D2D3AA21700D39416 /* ModuleNetwork.framework */; };
+		8968023F2D3AA21700D39416 /* ModuleNetwork.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8968023D2D3AA21700D39416 /* ModuleNetwork.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AACA4EC54BD3639CE3E55476 /* Pods_Model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F03D23A7AF0ABAF5419435C /* Pods_Model.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		896802402D3AA21700D39416 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8968023F2D3AA21700D39416 /* ModuleNetwork.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0F03D23A7AF0ABAF5419435C /* Pods_Model.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Model.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		30F61170700EE41413D66557 /* Pods-Model.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Model.debug.xcconfig"; path = "Target Support Files/Pods-Model/Pods-Model.debug.xcconfig"; sourceTree = "<group>"; };
 		47DB5376686C39003F5E398F /* Pods-Model.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Model.release.xcconfig"; path = "Target Support Files/Pods-Model/Pods-Model.release.xcconfig"; sourceTree = "<group>"; };
 		8968006F2D3AA05200D39416 /* Model.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Model.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8968023D2D3AA21700D39416 /* ModuleNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ModuleNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -44,6 +61,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AACA4EC54BD3639CE3E55476 /* Pods_Model.framework in Frameworks */,
+				8968023E2D3AA21700D39416 /* ModuleNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +71,7 @@
 		07BB631E0F3BC4E9158CA6C6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8968023D2D3AA21700D39416 /* ModuleNetwork.framework */,
 				0F03D23A7AF0ABAF5419435C /* Pods_Model.framework */,
 			);
 			name = Frameworks;
@@ -108,6 +127,7 @@
 				8968006B2D3AA05200D39416 /* Sources */,
 				8968006C2D3AA05200D39416 /* Frameworks */,
 				8968006D2D3AA05200D39416 /* Resources */,
+				896802402D3AA21700D39416 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
