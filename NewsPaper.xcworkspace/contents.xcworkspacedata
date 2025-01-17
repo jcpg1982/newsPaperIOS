@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:DataModule/DataModule.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Network/Network.xcodeproj">
    </FileRef>
    <FileRef
@@ -9,9 +12,6 @@
    </FileRef>
    <FileRef
       location = "group:Domain/Domain.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:Data/Data.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Design/Design.xcodeproj">

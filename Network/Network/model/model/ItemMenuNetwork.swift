@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct ItemMenuNetwork : Decodable {
-    let itemName: String?
-    let itemUrl: String?
-    let type: String?
+public struct ItemMenuNetwork : Decodable {
+    public let itemName: String?
+    public let itemUrl: String?
+    public let type: String?
 }

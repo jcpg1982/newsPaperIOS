@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct LegalDocumentsNetwork : Decodable {
-    let identifier: String?
-    let isActive: Bool?
+public struct LegalDocumentsNetwork : Decodable {
+    public let identifier: String?
+    public let isActive: Bool?
 }

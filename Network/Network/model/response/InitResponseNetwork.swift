@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct InitResponseNetwork: Decodable {
-    let appConfig: AppConfigNetwork?
-    let appMenu: [AppMenuNetwork]?
-    let pages: PagesNetwork?
-    let services: [ServicesNetwork]?
+public struct InitResponseNetwork: Decodable {
+    public let appConfig: AppConfigNetwork?
+    public let appMenu: [AppMenuNetwork]?
+    public let pages: PagesNetwork?
+    public let services: [ServicesNetwork]?
 }

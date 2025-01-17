@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct ServicesNetwork : Decodable {
-    let service: String?
-    let provider: String?
-    let isActive: Bool?
-    let settingService: SettingServiceNetwork?
+public struct ServicesNetwork : Decodable {
+    public let service: String?
+    public let provider: String?
+    public let isActive: Bool?
+    public let settingService: SettingServiceNetwork?
 }

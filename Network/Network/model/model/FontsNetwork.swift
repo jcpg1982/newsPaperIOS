@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct FontsNetwork : Decodable{
-    let body: BodyNetwork?
-    let `default`: DefaultNetwork?
-    let heading: HeadingNetwork?
-    let title: TitleNetwork?
+public struct FontsNetwork : Decodable{
+    public let body: BodyNetwork?
+    public let `default`: DefaultNetwork?
+    public let heading: HeadingNetwork?
+    public let title: TitleNetwork?
 }

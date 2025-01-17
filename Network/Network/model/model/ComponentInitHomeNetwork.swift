@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct ComponentInitHomeNetwork : Decodable {
-    let componentType: String?
-    let identifier: String?
-    let componentDesign: String?
+public struct ComponentInitHomeNetwork : Decodable {
+    public let componentType: String?
+    public let identifier: String?
+    public let componentDesign: String?
 }

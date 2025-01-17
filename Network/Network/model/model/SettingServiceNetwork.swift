@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct SettingServiceNetwork : Decodable {
-    let isShare: Bool?
-    let isDownload: Bool?
-    let maxDownloadsPerUser: Int?
+public struct SettingServiceNetwork : Decodable {
+    public let isShare: Bool?
+    public let isDownload: Bool?
+    public let maxDownloadsPerUser: Int?
 }

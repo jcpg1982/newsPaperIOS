@@ -6,25 +6,32 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9C779D85E94F8A308C4A0F7F /* Pods_Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6FC38B0707909A31B525DDE /* Pods_Network.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
-		897DF0952D384CFF00B3F864 /* Network.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Network.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44DB0C841ADC359894F5D06C /* Pods-Network.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Network.debug.xcconfig"; path = "Target Support Files/Pods-Network/Pods-Network.debug.xcconfig"; sourceTree = "<group>"; };
+		788923811FF81E4D76866CC8 /* Pods-Network.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Network.release.xcconfig"; path = "Target Support Files/Pods-Network/Pods-Network.release.xcconfig"; sourceTree = "<group>"; };
+		89814A942D3A180D00BFFF53 /* Network.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Network.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6FC38B0707909A31B525DDE /* Pods_Network.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Network.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		897DF09C2D384CFF00B3F864 /* Exceptions for "Network" folder in "Network" target */ = {
+		89814A9B2D3A180D00BFFF53 /* Exceptions for "Network" folder in "Network" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			publicHeaders = (
 				Network.h,
 			);
-			target = 897DF0942D384CFF00B3F864 /* Network */;
+			target = 89814A932D3A180D00BFFF53 /* Network */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		897DF0972D384CFF00B3F864 /* Network */ = {
+		89814A962D3A180D00BFFF53 /* Network */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				897DF09C2D384CFF00B3F864 /* Exceptions for "Network" folder in "Network" target */,
+				89814A9B2D3A180D00BFFF53 /* Exceptions for "Network" folder in "Network" target */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -32,28 +39,49 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		897DF0922D384CFF00B3F864 /* Frameworks */ = {
+		89814A912D3A180D00BFFF53 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C779D85E94F8A308C4A0F7F /* Pods_Network.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		897DF08B2D384CFF00B3F864 = {
+		2AE4FC5548CC3A38CE664B4D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				897DF0972D384CFF00B3F864 /* Network */,
-				897DF0962D384CFF00B3F864 /* Products */,
+				E6FC38B0707909A31B525DDE /* Pods_Network.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		508C516490CA7D663B8CB7FF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				44DB0C841ADC359894F5D06C /* Pods-Network.debug.xcconfig */,
+				788923811FF81E4D76866CC8 /* Pods-Network.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
+		89814A8A2D3A180D00BFFF53 = {
+			isa = PBXGroup;
+			children = (
+				89814A962D3A180D00BFFF53 /* Network */,
+				89814A952D3A180D00BFFF53 /* Products */,
+				508C516490CA7D663B8CB7FF /* Pods */,
+				2AE4FC5548CC3A38CE664B4D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		897DF0962D384CFF00B3F864 /* Products */ = {
+		89814A952D3A180D00BFFF53 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				897DF0952D384CFF00B3F864 /* Network.framework */,
+				89814A942D3A180D00BFFF53 /* Network.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,7 +89,7 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		897DF0902D384CFF00B3F864 /* Headers */ = {
+		89814A8F2D3A180D00BFFF53 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -71,64 +99,63 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		897DF0942D384CFF00B3F864 /* Network */ = {
+		89814A932D3A180D00BFFF53 /* Network */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 897DF09D2D384CFF00B3F864 /* Build configuration list for PBXNativeTarget "Network" */;
+			buildConfigurationList = 89814A9C2D3A180D00BFFF53 /* Build configuration list for PBXNativeTarget "Network" */;
 			buildPhases = (
-				897DF0902D384CFF00B3F864 /* Headers */,
-				897DF0912D384CFF00B3F864 /* Sources */,
-				897DF0922D384CFF00B3F864 /* Frameworks */,
-				897DF0932D384CFF00B3F864 /* Resources */,
+				3C928EB3468CA12AFF843F0A /* [CP] Check Pods Manifest.lock */,
+				89814A8F2D3A180D00BFFF53 /* Headers */,
+				89814A902D3A180D00BFFF53 /* Sources */,
+				89814A912D3A180D00BFFF53 /* Frameworks */,
+				89814A922D3A180D00BFFF53 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				897DF0972D384CFF00B3F864 /* Network */,
+				89814A962D3A180D00BFFF53 /* Network */,
 			);
 			name = Network;
-			packageProductDependencies = (
-			);
 			productName = Network;
-			productReference = 897DF0952D384CFF00B3F864 /* Network.framework */;
+			productReference = 89814A942D3A180D00BFFF53 /* Network.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		897DF08C2D384CFF00B3F864 /* Project object */ = {
+		89814A8B2D3A180D00BFFF53 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
-					897DF0942D384CFF00B3F864 = {
+					89814A932D3A180D00BFFF53 = {
 						CreatedOnToolsVersion = 16.2;
 					};
 				};
 			};
-			buildConfigurationList = 897DF08F2D384CFF00B3F864 /* Build configuration list for PBXProject "Network" */;
+			buildConfigurationList = 89814A8E2D3A180D00BFFF53 /* Build configuration list for PBXProject "Network" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 897DF08B2D384CFF00B3F864;
+			mainGroup = 89814A8A2D3A180D00BFFF53;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 897DF0962D384CFF00B3F864 /* Products */;
+			productRefGroup = 89814A952D3A180D00BFFF53 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				897DF0942D384CFF00B3F864 /* Network */,
+				89814A932D3A180D00BFFF53 /* Network */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		897DF0932D384CFF00B3F864 /* Resources */ = {
+		89814A922D3A180D00BFFF53 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -137,8 +164,33 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3C928EB3468CA12AFF843F0A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Network-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		897DF0912D384CFF00B3F864 /* Sources */ = {
+		89814A902D3A180D00BFFF53 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -148,8 +200,9 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		897DF09E2D384CFF00B3F864 /* Debug */ = {
+		89814A9D2D3A180D00BFFF53 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44DB0C841ADC359894F5D06C /* Pods-Network.debug.xcconfig */;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -180,8 +233,9 @@
 			};
 			name = Debug;
 		};
-		897DF09F2D384CFF00B3F864 /* Release */ = {
+		89814A9E2D3A180D00BFFF53 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 788923811FF81E4D76866CC8 /* Pods-Network.release.xcconfig */;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -212,7 +266,7 @@
 			};
 			name = Release;
 		};
-		897DF0A02D384CFF00B3F864 /* Debug */ = {
+		89814A9F2D3A180D00BFFF53 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -278,7 +332,7 @@
 			};
 			name = Debug;
 		};
-		897DF0A12D384CFF00B3F864 /* Release */ = {
+		89814AA02D3A180D00BFFF53 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -340,25 +394,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		897DF08F2D384CFF00B3F864 /* Build configuration list for PBXProject "Network" */ = {
+		89814A8E2D3A180D00BFFF53 /* Build configuration list for PBXProject "Network" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				897DF0A02D384CFF00B3F864 /* Debug */,
-				897DF0A12D384CFF00B3F864 /* Release */,
+				89814A9F2D3A180D00BFFF53 /* Debug */,
+				89814AA02D3A180D00BFFF53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		897DF09D2D384CFF00B3F864 /* Build configuration list for PBXNativeTarget "Network" */ = {
+		89814A9C2D3A180D00BFFF53 /* Build configuration list for PBXNativeTarget "Network" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				897DF09E2D384CFF00B3F864 /* Debug */,
-				897DF09F2D384CFF00B3F864 /* Release */,
+				89814A9D2D3A180D00BFFF53 /* Debug */,
+				89814A9E2D3A180D00BFFF53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 897DF08C2D384CFF00B3F864 /* Project object */;
+	rootObject = 89814A8B2D3A180D00BFFF53 /* Project object */;
 }

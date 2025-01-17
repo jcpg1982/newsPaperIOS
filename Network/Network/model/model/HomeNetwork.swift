@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct HomeNetwork : Decodable {
-    let components: [ComponentInitHomeNetwork]?
+public struct HomeNetwork : Decodable {
+    public let components: [ComponentInitHomeNetwork]?
 }

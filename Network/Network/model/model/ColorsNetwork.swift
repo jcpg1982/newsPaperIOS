@@ -7,10 +7,10 @@
 
 import Foundation
 
-struct ColorsNetwork:Decodable{
-    let bgColorApp: String?
-    let bgColorHeader: String?
-    let primaryColor: String?
-    let colorAuthorOpinion: String?
-    let text: String?
+public struct ColorsNetwork:Decodable{
+    public let bgColorApp: String?
+    public let bgColorHeader: String?
+    public let primaryColor: String?
+    public let colorAuthorOpinion: String?
+    public let text: String?
 }

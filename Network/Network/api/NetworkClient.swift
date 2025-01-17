@@ -7,12 +7,48 @@
 
 import Foundation
 
-protocol NetworkClient {
-    func performRequest<T: Decodable>(
-        endpoint: String,
-        method: String,
-        parameters: [String: Any]?,
-        headers: [String: String]?,
-        completion: @escaping (Result<T, Error>) -> Void
-    )
+public class NetworkClient {
+    
+    public static let shared = NetworkClient()
+    
+    private init(){}
+    
+    func performRequest<T: Decodable>(endpoint: String) async throws -> T {
+        let fullUrl = Constants.baseUrl + endpoint
+        print("performRequest URL: \(fullUrl)")
+        
+        // Verifica que la URL sea válida
+        guard let url = URL(string: fullUrl) else {
+            throw URLError(.badURL)
+        }
+        print("performRequest url: \(url)")
+        
+        do {
+            // Realiza la solicitud
+            let (data, response) = try await URLSession.shared.data(from: url)
+            
+            // Verifica que la respuesta sea válida
+            guard let httpResponse = response as? HTTPURLResponse,
+                  (200...299).contains(httpResponse.statusCode) else {
+                print("performRequest error: Bad server response")
+                throw URLError(.badServerResponse)
+            }
+            
+            // Decodifica los datos en el tipo especificado
+            do {
+                let decodedResponse = try JSONDecoder().decode(T.self, from: data)
+                print("performRequest decodedResponse: \(decodedResponse)")
+                return decodedResponse
+            } catch {
+                print("performRequest error: Cannot parse response")
+                throw URLError(.cannotParseResponse)
+            }
+        } catch let error as URLError {
+            print("performRequest error: \(error)")
+            throw error
+        } catch {
+            print("performRequest error: Unknown error")
+            throw URLError(.unknown)
+        }
+    }
 }

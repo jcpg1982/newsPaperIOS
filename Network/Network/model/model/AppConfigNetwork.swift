@@ -7,14 +7,14 @@
 
 import Foundation
 
-struct AppConfigNetwork:Decodable {
-    let showSalaPlus: Bool?
-    let showSubcription: Bool?
-    let showMenuPodcast: Bool?
-    let hasSubscription: Bool?
-    let showMenuEpaper: Bool?
-    let urlSuscription: String?
-    let premiumIdentifier: String?
-    let themeModes: [ThemeModeNetwork]?
-    let legalDocuments: [LegalDocumentsNetwork]?
+public struct AppConfigNetwork:Decodable {
+    public let showSalaPlus: Bool?
+    public let showSubcription: Bool?
+    public let showMenuPodcast: Bool?
+    public let hasSubscription: Bool?
+    public let showMenuEpaper: Bool?
+    public let urlSuscription: String?
+    public let premiumIdentifier: String?
+    public let themeModes: [ThemeModeNetwork]?
+    public let legalDocuments: [LegalDocumentsNetwork]?
 }

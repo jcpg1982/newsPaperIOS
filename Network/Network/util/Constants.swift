@@ -8,6 +8,8 @@
 import Foundation
 
 struct Constants {
+    
+    static let baseUrl = "https://api-publisher-elfinanciero.andesmobile.app/api"
 
     struct Api {
         static let INIT = "init/"

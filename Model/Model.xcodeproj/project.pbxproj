@@ -6,25 +6,49 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		89814CB42D3A206500BFFF53 /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89814CB32D3A206500BFFF53 /* Network.framework */; };
+		89814CB52D3A206500BFFF53 /* Network.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 89814CB32D3A206500BFFF53 /* Network.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D32DA6E83D988FD980BD744E /* Pods_Model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E127A00658232DA54D11AB /* Pods_Model.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		89814AED2D3A19EF00BFFF53 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				89814CB52D3A206500BFFF53 /* Network.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		897DF0542D384AB000B3F864 /* Model.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Model.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		17FB96D155EDA175E7D8BC1B /* Pods-Model.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Model.debug.xcconfig"; path = "Target Support Files/Pods-Model/Pods-Model.debug.xcconfig"; sourceTree = "<group>"; };
+		70E127A00658232DA54D11AB /* Pods_Model.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Model.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89814A542D3A17C100BFFF53 /* Model.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Model.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89814CB32D3A206500BFFF53 /* Network.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Network.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B84BD4661ACA0A13713A2505 /* Pods-Model.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Model.release.xcconfig"; path = "Target Support Files/Pods-Model/Pods-Model.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		897DF05B2D384AB000B3F864 /* Exceptions for "Model" folder in "Model" target */ = {
+		89814A5B2D3A17C200BFFF53 /* Exceptions for "Model" folder in "Model" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			publicHeaders = (
 				Model.h,
 			);
-			target = 897DF0532D384AB000B3F864 /* Model */;
+			target = 89814A532D3A17C100BFFF53 /* Model */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		897DF0562D384AB000B3F864 /* Model */ = {
+		89814A562D3A17C100BFFF53 /* Model */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				897DF05B2D384AB000B3F864 /* Exceptions for "Model" folder in "Model" target */,
+				89814A5B2D3A17C200BFFF53 /* Exceptions for "Model" folder in "Model" target */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -32,36 +56,59 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		897DF0512D384AB000B3F864 /* Frameworks */ = {
+		89814A512D3A17C100BFFF53 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D32DA6E83D988FD980BD744E /* Pods_Model.framework in Frameworks */,
+				89814CB42D3A206500BFFF53 /* Network.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		897DF04A2D384AB000B3F864 = {
+		89814A4A2D3A17C100BFFF53 = {
 			isa = PBXGroup;
 			children = (
-				897DF0562D384AB000B3F864 /* Model */,
-				897DF0552D384AB000B3F864 /* Products */,
+				89814A562D3A17C100BFFF53 /* Model */,
+				89814AE92D3A19EF00BFFF53 /* Frameworks */,
+				89814A552D3A17C100BFFF53 /* Products */,
+				9AEB42EC1005C6D675BDDC7E /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
-		897DF0552D384AB000B3F864 /* Products */ = {
+		89814A552D3A17C100BFFF53 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				897DF0542D384AB000B3F864 /* Model.framework */,
+				89814A542D3A17C100BFFF53 /* Model.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		89814AE92D3A19EF00BFFF53 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89814CB32D3A206500BFFF53 /* Network.framework */,
+				70E127A00658232DA54D11AB /* Pods_Model.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9AEB42EC1005C6D675BDDC7E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				17FB96D155EDA175E7D8BC1B /* Pods-Model.debug.xcconfig */,
+				B84BD4661ACA0A13713A2505 /* Pods-Model.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		897DF04F2D384AB000B3F864 /* Headers */ = {
+		89814A4F2D3A17C100BFFF53 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -71,64 +118,64 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		897DF0532D384AB000B3F864 /* Model */ = {
+		89814A532D3A17C100BFFF53 /* Model */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 897DF05C2D384AB000B3F864 /* Build configuration list for PBXNativeTarget "Model" */;
+			buildConfigurationList = 89814A5C2D3A17C200BFFF53 /* Build configuration list for PBXNativeTarget "Model" */;
 			buildPhases = (
-				897DF04F2D384AB000B3F864 /* Headers */,
-				897DF0502D384AB000B3F864 /* Sources */,
-				897DF0512D384AB000B3F864 /* Frameworks */,
-				897DF0522D384AB000B3F864 /* Resources */,
+				5DE032E74FF0EFEC99A6D1F9 /* [CP] Check Pods Manifest.lock */,
+				89814A4F2D3A17C100BFFF53 /* Headers */,
+				89814A502D3A17C100BFFF53 /* Sources */,
+				89814A512D3A17C100BFFF53 /* Frameworks */,
+				89814A522D3A17C100BFFF53 /* Resources */,
+				89814AED2D3A19EF00BFFF53 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				897DF0562D384AB000B3F864 /* Model */,
+				89814A562D3A17C100BFFF53 /* Model */,
 			);
 			name = Model;
-			packageProductDependencies = (
-			);
 			productName = Model;
-			productReference = 897DF0542D384AB000B3F864 /* Model.framework */;
+			productReference = 89814A542D3A17C100BFFF53 /* Model.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		897DF04B2D384AB000B3F864 /* Project object */ = {
+		89814A4B2D3A17C100BFFF53 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
-					897DF0532D384AB000B3F864 = {
+					89814A532D3A17C100BFFF53 = {
 						CreatedOnToolsVersion = 16.2;
 					};
 				};
 			};
-			buildConfigurationList = 897DF04E2D384AB000B3F864 /* Build configuration list for PBXProject "Model" */;
+			buildConfigurationList = 89814A4E2D3A17C100BFFF53 /* Build configuration list for PBXProject "Model" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 897DF04A2D384AB000B3F864;
+			mainGroup = 89814A4A2D3A17C100BFFF53;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 897DF0552D384AB000B3F864 /* Products */;
+			productRefGroup = 89814A552D3A17C100BFFF53 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				897DF0532D384AB000B3F864 /* Model */,
+				89814A532D3A17C100BFFF53 /* Model */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		897DF0522D384AB000B3F864 /* Resources */ = {
+		89814A522D3A17C100BFFF53 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -137,8 +184,33 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5DE032E74FF0EFEC99A6D1F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Model-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		897DF0502D384AB000B3F864 /* Sources */ = {
+		89814A502D3A17C100BFFF53 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -148,8 +220,9 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		897DF05D2D384AB000B3F864 /* Debug */ = {
+		89814A5D2D3A17C200BFFF53 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17FB96D155EDA175E7D8BC1B /* Pods-Model.debug.xcconfig */;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -180,8 +253,9 @@
 			};
 			name = Debug;
 		};
-		897DF05E2D384AB000B3F864 /* Release */ = {
+		89814A5E2D3A17C200BFFF53 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B84BD4661ACA0A13713A2505 /* Pods-Model.release.xcconfig */;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -212,7 +286,7 @@
 			};
 			name = Release;
 		};
-		897DF05F2D384AB000B3F864 /* Debug */ = {
+		89814A5F2D3A17C200BFFF53 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -278,7 +352,7 @@
 			};
 			name = Debug;
 		};
-		897DF0602D384AB000B3F864 /* Release */ = {
+		89814A602D3A17C200BFFF53 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -340,25 +414,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		897DF04E2D384AB000B3F864 /* Build configuration list for PBXProject "Model" */ = {
+		89814A4E2D3A17C100BFFF53 /* Build configuration list for PBXProject "Model" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				897DF05F2D384AB000B3F864 /* Debug */,
-				897DF0602D384AB000B3F864 /* Release */,
+				89814A5F2D3A17C200BFFF53 /* Debug */,
+				89814A602D3A17C200BFFF53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		897DF05C2D384AB000B3F864 /* Build configuration list for PBXNativeTarget "Model" */ = {
+		89814A5C2D3A17C200BFFF53 /* Build configuration list for PBXNativeTarget "Model" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				897DF05D2D384AB000B3F864 /* Debug */,
-				897DF05E2D384AB000B3F864 /* Release */,
+				89814A5D2D3A17C200BFFF53 /* Debug */,
+				89814A5E2D3A17C200BFFF53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 897DF04B2D384AB000B3F864 /* Project object */;
+	rootObject = 89814A4B2D3A17C100BFFF53 /* Project object */;
 }

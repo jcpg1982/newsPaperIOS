@@ -2,7 +2,7 @@
 //  NewsPaperApp.swift
 //  NewsPaper
 //
-//  Created by Juan Pasache on 14/01/25.
+//  Created by Juan Pasache on 16/01/25.
 //
 
 import SwiftUI

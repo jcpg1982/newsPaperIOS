@@ -7,10 +7,10 @@
 
 import Foundation
 
-struct ThemeModeNetwork : Decodable{
-    let colors: ColorsNetwork?
-    let fonts: FontsNetwork?
-    let logos: LogosNetwork?
-    let mode: String?
-    let styles: StylesNetwork?
+public struct ThemeModeNetwork : Decodable{
+    public let colors: ColorsNetwork?
+    public let fonts: FontsNetwork?
+    public let logos: LogosNetwork?
+    public let mode: String?
+    public let styles: StylesNetwork?
 }

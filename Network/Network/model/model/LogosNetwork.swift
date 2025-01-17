@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct LogosNetwork : Decodable {
-    let logo: String?
-    let logoMenu: String?
-    let logoLoader: String?
-    let logoLoaderBg: String?
+public struct LogosNetwork : Decodable {
+    public let logo: String?
+    public let logoMenu: String?
+    public let logoLoader: String?
+    public let logoLoaderBg: String?
 }

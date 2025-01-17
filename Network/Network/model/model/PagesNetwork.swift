@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct PagesNetwork :Decodable {
-    let home: HomeNetwork?
+public struct PagesNetwork :Decodable {
+    public let home: HomeNetwork?
 }

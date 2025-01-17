@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct StylesNetwork : Decodable {
-    let css: String?
+public struct StylesNetwork : Decodable {
+    public let css: String?
 }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct TitleNetwork : Decodable {
-    let family: String?
-    let weight: String?
+public struct TitleNetwork : Decodable {
+    public let family: String?
+    public let weight: String?
 }

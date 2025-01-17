@@ -7,10 +7,10 @@
 
 import Foundation
 
-struct AppMenuNetwork :Decodable {
-    let icon: String?
-    let isActive: Bool?
-    let itemMenuList: [ItemMenuNetwork]?
-    let menuId: String?
-    let name: String?
+public struct AppMenuNetwork :Decodable {
+    public let icon: String?
+    public let isActive: Bool?
+    public let itemMenuList: [ItemMenuNetwork]?
+    public let menuId: String?
+    public let name: String?
 }

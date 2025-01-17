@@ -1,30 +1,39 @@
-# Uncomment the next line to define a global platform for your project
-platform :ios, '11.0'
+platform :ios, '12.0'
 
-target 'NewsPaper' do
-  # Comment the next line if you don't want to use dynamic frameworks
+workspace 'NewsPaper'
+
+project 'Domain/Domain.xcodeproj'
+project 'Network/Network.xcodeproj'
+project 'Model/Model.xcodeproj'
+project 'DataModule/DataModule.xcodeproj'
+project 'Design/Design.xcodeproj'
+project 'NewsPaper.xcodeproj'
+
+target 'Model' do project 'Model/Model.xcodeproj'
+  use_frameworks!
+end
+
+target 'Network' do project 'Network/Network.xcodeproj'
+  use_frameworks!
+
+end
+
+target 'DataModule' do project 'DataModule/DataModule.xcodeproj'
+  use_frameworks!
+end
+
+target 'Domain' do project 'Domain/Domain.xcodeproj'
+  use_frameworks!
+end
+
+target 'Design' do project 'Design/Design.xcodeproj'
+  use_frameworks!
+end
+
+abstract_target 'SharedPods' do
   use_frameworks!
   
-  # Pods for NewsPaper
-  #pod 'EmarsysSDK', '~> 3.5.0'
-  #pod 'Google-Mobile-Ads-SDK'
-  #pod 'FirebaseAnalytics'
-  #pod 'FirebaseCore'
-  #pod 'FirebaseAuth'
-  #pod 'Firebase/Messaging'
-  #pod 'Firebase/Crashlytics'
-  #pod 'GoogleSignIn'
-  #pod 'PianoComposer'
-  #pod 'PianoOAuth'
-  #pod 'PianoOAuthGoogle'
-  
-  target 'NewsPaperTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-  
-  target 'NewsPaperUITests' do
-    # Pods for testing
+  target 'NewsPaper' do
   end
   
 end
