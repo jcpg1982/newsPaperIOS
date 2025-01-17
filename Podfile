@@ -7,6 +7,7 @@ project 'Domain/Domain.xcodeproj'
 project 'Model/Model.xcodeproj'
 project 'ModuleData/ModuleData.xcodeproj'
 project 'ModuleNetwork/ModuleNetwork.xcodeproj'
+project 'Database/Database.xcodeproj'
 project 'NewsPaper.xcodeproj'
 
 target 'Design' do project 'Design/Design.xcodeproj'
@@ -22,6 +23,9 @@ target 'ModuleData' do project 'ModuleData/ModuleData.xcodeproj'
   use_frameworks!
 end
 target 'ModuleNetwork' do project 'ModuleNetwork/ModuleNetwork.xcodeproj'
+  use_frameworks!
+end
+target 'Database' do project 'Database/Database.xcodeproj'
   use_frameworks!
 end
 

@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Database/Database.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:ModuleNetwork/ModuleNetwork.xcodeproj">
    </FileRef>
    <FileRef
