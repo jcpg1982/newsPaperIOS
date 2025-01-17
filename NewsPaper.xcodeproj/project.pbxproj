@@ -7,12 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		89814CB72D3A20A400BFFF53 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89814CB62D3A20A400BFFF53 /* Domain.framework */; };
-		89814CB82D3A20A400BFFF53 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 89814CB62D3A20A400BFFF53 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		89814CBA2D3A20A800BFFF53 /* Model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89814CB92D3A20A800BFFF53 /* Model.framework */; };
-		89814CBB2D3A20A800BFFF53 /* Model.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 89814CB92D3A20A800BFFF53 /* Model.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		89814CBD2D3A20AB00BFFF53 /* Design.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89814CBC2D3A20AB00BFFF53 /* Design.framework */; };
-		89814CBE2D3A20AB00BFFF53 /* Design.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 89814CBC2D3A20AB00BFFF53 /* Design.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C89DBEDE37A46470924F4310 /* Pods_SharedPods_NewsPaper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD5CEE46F121DE4F656CCD /* Pods_SharedPods_NewsPaper.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,9 +17,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				89814CBB2D3A20A800BFFF53 /* Model.framework in Embed Frameworks */,
-				89814CB82D3A20A400BFFF53 /* Domain.framework in Embed Frameworks */,
-				89814CBE2D3A20AB00BFFF53 /* Design.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -34,9 +25,6 @@
 
 /* Begin PBXFileReference section */
 		28FD5CEE46F121DE4F656CCD /* Pods_SharedPods_NewsPaper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SharedPods_NewsPaper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		89814CB62D3A20A400BFFF53 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		89814CB92D3A20A800BFFF53 /* Model.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Model.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		89814CBC2D3A20AB00BFFF53 /* Design.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Design.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89ED79A12D3A105E00A391CF /* NewsPaper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsPaper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C5B5DA534ABFE74F5F956F3 /* Pods-SharedPods-NewsPaper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharedPods-NewsPaper.release.xcconfig"; path = "Target Support Files/Pods-SharedPods-NewsPaper/Pods-SharedPods-NewsPaper.release.xcconfig"; sourceTree = "<group>"; };
 		BF4F029ACF30CE50C952B288 /* Pods-SharedPods-NewsPaper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharedPods-NewsPaper.debug.xcconfig"; path = "Target Support Files/Pods-SharedPods-NewsPaper/Pods-SharedPods-NewsPaper.debug.xcconfig"; sourceTree = "<group>"; };
@@ -55,9 +43,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89814CB72D3A20A400BFFF53 /* Domain.framework in Frameworks */,
-				89814CBA2D3A20A800BFFF53 /* Model.framework in Frameworks */,
-				89814CBD2D3A20AB00BFFF53 /* Design.framework in Frameworks */,
 				C89DBEDE37A46470924F4310 /* Pods_SharedPods_NewsPaper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,9 +53,6 @@
 		89814A232D3A165D00BFFF53 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				89814CBC2D3A20AB00BFFF53 /* Design.framework */,
-				89814CB92D3A20A800BFFF53 /* Model.framework */,
-				89814CB62D3A20A400BFFF53 /* Domain.framework */,
 				28FD5CEE46F121DE4F656CCD /* Pods_SharedPods_NewsPaper.framework */,
 			);
 			name = Frameworks;

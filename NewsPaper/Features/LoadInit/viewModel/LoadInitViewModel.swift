@@ -6,8 +6,6 @@
 //
 
 import Foundation
-import Model
-import Domain
 
 class LoadInitViewModel: ObservableObject {
     

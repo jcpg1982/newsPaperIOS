@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import Design
 
 struct LoadInit: View {
     
